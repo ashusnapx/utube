@@ -15,6 +15,5 @@ const storage = multer.diskStorage({
 });
 
 export const upload = multer({
-  storage: storage,
-  limits: { fileSize: FILE_SIZE },
-}).single(FIELD_NAME);
+  storage,
+});
